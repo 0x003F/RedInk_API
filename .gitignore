@@ -1,3 +1,4 @@
 .env
 RedInk.db
 __pycache__
+readpdf.py
