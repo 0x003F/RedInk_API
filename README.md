@@ -1,12 +1,12 @@
 # RedInk_API
 
-**RedInk_API** is a RESTful API built with FastAPI that provides access to the text of books that have been controversial, banned, or censored at some point in history.
+**RedInk_API** is a RESTful API built with FastAPI that provides access to controversial books that have been banned, criticised or censored at some point in history.
 
 ---
 
 ## 📚 Project Overview
 
-This project was created to support research, educational access, and freedom of information by making historically challenged, controversial or censored books available in digital format. Whether you're a researcher, developer or simply curious, RedInk_API allows you to explore these texts and to integrate them in another application.
+This project was created to support research, educational access and freedom of information by making historically challenged, controversial or censored books available in digital format. Whether you're a researcher, developer or simply curious, RedInk_API allows you to explore these texts and to integrate them in another application.
 
 ---
 
