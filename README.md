@@ -6,7 +6,8 @@
 
 ## 📚 Project Overview
 
-This project was created to support research, educational access and freedom of information by making historically challenged, controversial or censored books available in digital format. Whether you're a researcher, developer or simply curious, RedInk_API allows you to explore these texts and to integrate them in another application.
+This project began as a personal and academic initiative, aimed at showcasing technical skills in API development, as a commitment to freedom of information and it also serves as a portfolio element.
+This application was created to support research, educational access and freedom of information by making historically challenged, controversial or censored books available in digital format. Whether you're a researcher, developer or simply curious, RedInk_API allows you to explore these texts and to integrate them in another application. Also, I will make sure to update the database and add new books from time to time.
 
 ---
 
