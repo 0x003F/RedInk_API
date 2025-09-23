@@ -33,8 +33,24 @@ def decode_escape_sequences(text: str)->str:
 
 
 @app.get("/")
-async def root():
-    return {"greeting":"Hello world"}
+async def get_available_endpoints():
+    endpoints=[
+        {"method": "GET", "path": "/authors", "handler": "get_all_authors"},
+        {"method": "GET", "path": "/authors/by-ID/{author_ID}", "handler": "author_from_ID"},
+        {"method": "GET", "path": "/authors/by-name/{author_name}", "handler": "authors_by_name"},
+        {"method": "GET", "path": "/authors/by-surname/{author_surname}", "handler": "authors_by_surname"},
+        {"method": "GET", "path": "/books", "handler": "get_all_books"},
+        {"method": "GET", "path": "/books/by-ID/{book_ID}", "handler": "get_books_by_ID"},
+        {"method": "GET", "path": "/books/by-ID/{book_ID}/content", "handler": "get_book_content_by_ID"},
+        {"method": "GET", "path": "/books/by-title/{book_title}", "handler": "get_books_by_title"},
+        {"method": "GET", "path": "/books/by-author-name/{author_name}", "handler": "get_books_by_author_name"},
+        {"method": "GET", "path": "/books/by-author-surname/{author_surname}", "handler": "get_books_by_author_surname"},
+    ]
+    return {
+        "overview: ": "Available endpoints",
+        "endpoints:": endpoints
+    }
+
 
 @app.get("/authors")
 async def get_all_authors():
@@ -143,7 +159,7 @@ async def get_books_by_ID(book_ID: int):
     JSONcontent=""
 
     if not books_obj:
-        raise HTTPException(status_code=404, detail="Books not found")
+        raise HTTPException(status_code=404, detail="Book not found")
 
     books_list=[]
 
